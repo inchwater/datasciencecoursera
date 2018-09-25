@@ -1,9 +1,9 @@
 ##Read the training data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/train")
+setwd("Set to directory where the file shown below is saved")
 train <- read.table("X_train.txt")
 
 ##Read the test data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/test")
+setwd("Set to directory where the file shown below is saved")
 test <- read.table("X_test.txt")
 
 ## Load the "dplyr" package
@@ -20,7 +20,7 @@ library(matrixStats)
 sd_tt <- colSds(as.matrix(tt))
 
 ##Set working directory accodingly and read the features text file
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset")
+setwd("Set to directory where the file shown below is saved")
 features <- read.table("features.txt")
 
 ##Convert all rows that came in as factors to character type
@@ -32,7 +32,7 @@ for (i in 1:ncol(tt)){
 }
 
 ##Read the subject IDs for the training data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/train")
+setwd("Set to directory where the file shown below is saved")
 subject_train <- read.table("subject_train.txt")
 
 ##Read the activity IDs for the training data set
@@ -40,7 +40,7 @@ actid_train <- read.table("y_train.txt")
 
 
 ##Read the subject IDs for the test data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/test")
+setwd("Set to directory where the file shown below is saved")
 subject_test <- read.table("subject_test.txt")
 
 ##Read the activity IDs for the test data set
