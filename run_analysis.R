@@ -1,9 +1,9 @@
 ##Read the training data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/train")
+setwd("Set to the appropriate working directory")
 train <- read.table("X_train.txt")
 
 ##Read the test data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/test")
+setwd("Set to the appropriate working directory")
 test <- read.table("X_test.txt")
 
 ## Load the "dplyr" package
@@ -13,7 +13,7 @@ library(dplyr)
 tt <- rbind(test,train)
 
 ##Set working directory accodingly and read the features text file
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset")
+setwd("Set to the appropriate working directory")
 features <- read.table("features.txt")
 
 ##Convert all rows that came in as factors to character type
@@ -34,14 +34,14 @@ tt_mod_2 <- tt[,grepl("mean", colnames(tt))]
 tt_mod <- cbind(tt_mod_1, tt_mod_2)
 
 ##Read the subject IDs for the training data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/train")
+setwd("Set to the appropriate working directory")
 subject_train <- read.table("subject_train.txt")
 
 ##Read the activity IDs for the training data set
 actid_train <- read.table("y_train.txt")
 
 ##Read the subject IDs for the test data set
-setwd("C:/Users/Siddharth/Documents/Careers/Siddharth/DataScienceSpecialization/Getting and Cleaning Data/Course Project/UCI HAR Dataset/test")
+setwd("Set to the appropriate working directory")
 subject_test <- read.table("subject_test.txt")
 
 ##Read the activity IDs for the test data set
